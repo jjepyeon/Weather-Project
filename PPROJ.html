@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/f21bc89afa.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather Project</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="searchbutton" id="search-form">
+        <div class="input-group">
+          <div class="form-outline">
+            <input
+              type="search"
+              placeholder="Enter city"
+              id="form1"
+              class="form-control"
+            />
+          </div>
+          <div class="input-group-append">
+            <button type="button" class="btn btn-primary">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+          <div class="locationButton">
+            <button class="btn btn-info">Current Location</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="mainweathericon">🟡</div>
+      <h1>
+        <li class="topinfo">70°F</li>
+        <li class="xtrainfo" id="humidity">Humidity: 0%</li>
+        <li class="xtrainfo" id="wind">Wind: 19 mph</li>
+      </h1>
+
+      <h2>
+        <ul>
+          <li class="city">Los Angeles, CA</li>
+          <li class="date-time">Monday 3:00PM</li>
+          <li class="weatherDescription">Sunny</li>
+        </ul>
+      </h2>
+
+      <div class="weeklytemp">
+        <div class="row">
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                Mon
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Tue
+                <div class="weathericon">⛅️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Wed
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Thu
+                <div class="weathericon">🌤</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="row">
+              <div class="col-3">
+                Fri
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Sat
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Sun
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+              <div class="col-3">
+                Mon
+                <div class="weathericon">☀️</div>
+                <div class="temprange">75°<span class="light"> 55°</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
