@@ -34,6 +34,10 @@ h3 {
   font-size: 20px;
 }
 
+p {
+  margin: 20px;
+}
+
 .mainweathericon {
   display: inline-block;
   font-size: 80px;
