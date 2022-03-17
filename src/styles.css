@@ -1,6 +1,7 @@
 .container {
   border: 1px solid #dadde1;
   margin: 20px;
+  margin-bottom: 10px;
   border-radius: 10px;
   max-width: 600px;
 }
