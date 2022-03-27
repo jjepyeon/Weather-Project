@@ -41,29 +41,32 @@
         </div>
       </div>
 
-      <div>
-        <img
-          src="https://ssl.gstatic.com/onebox/weather/64/sunny.png"
-          class="mainweathericon"
-        />
-        <h1>
-          <li class="topinfo">
-            <span id="temperature">70</span>
-            <span class="units"
-              ><a href="#" id="fahrenheit-link" class="active">°F |</a
-              ><a href="#" id="celsius-link">°C</a></span
-            >
-          </li>
-          <li class="xtrainfo" id="humidity">Humidity: 0%</li>
-          <li class="xtrainfo" id="wind">Wind: 19 mph</li>
-        </h1>
-        <h2>
-          <ul>
-            <li class="city">Los Angeles, CA</li>
-            <li class="date-time">Monday 3:00PM</li>
-            <li class="weatherDescription">Sunny</li>
-          </ul>
-        </h2>
+      <div style="width: 100%; overflow: hidden">
+        <div class="mainweathericon">
+          <img src="https://ssl.gstatic.com/onebox/weather/64/sunny.png" />
+        </div>
+        <span class="rightside">
+          <h1>
+            <li class="topinfo">
+              <span id="temperature">70</span>
+              <span class="units"
+                ><a href="#" id="fahrenheit-link" class="active">°F |</a
+                ><a href="#" id="celsius-link">°C</a></span
+              >
+            </li>
+            <li class="xtrainfo" id="humidity">Humidity: 0%</li>
+            <li class="xtrainfo" id="wind">Wind: 19 mph</li>
+          </h1>
+        </span>
+        <span class="rightside">
+          <h2>
+            <ul>
+              <li class="city">Los Angeles, CA</li>
+              <li class="date-time">Monday 3:00PM</li>
+              <li class="weatherDescription">Sunny</li>
+            </ul>
+          </h2>
+        </span>
       </div>
       <div class="weather-forecast" id="forecast"></div>
     </div>

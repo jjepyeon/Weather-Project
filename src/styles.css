@@ -20,11 +20,12 @@ h1 {
   list-style: none;
 }
 
-h2 {
+.rightside h2 {
   text-align: right;
   font-size: 20px;
+  margin: 20px;
+  width: fit-content;
   float: right;
-  margin: 10px;
 }
 
 ul {
@@ -43,9 +44,9 @@ p {
 .mainweathericon {
   display: inline-block;
   font-size: 80px;
+  vertical-align: super;
   padding-right: 20px;
   margin-left: 20px;
-  padding-bottom: 70px;
 }
 
 .topinfo {
@@ -84,4 +85,29 @@ p {
 }
 .active:hover {
   text-decoration: none;
+}
+
+.weather-forecast {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-temperatures {
+  font-size: 13px;
+}
+
+.weather-forecast img {
+  margin-right: 5px;
+  height: 64px;
+  width: 64px;
 }
