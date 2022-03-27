@@ -131,3 +131,5 @@ function getCurrentPosition() {
 
 let button = document.querySelector(".locationButton");
 button.addEventListener("click", getCurrentPosition);
+
+getCurrentPosition();
