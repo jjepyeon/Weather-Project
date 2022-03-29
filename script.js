@@ -96,6 +96,8 @@ function displayTemp(response) {
 
   fahrenheitTemperature = response.data.main.temp;
 
+  let cityElement = document.querySelector("li.city");
+  cityElement.innerHTML = response.data.name;
   let degree = document.querySelector("#temperature");
   degree.innerHTML = `${temperature}`;
   let speedOfWind = document.querySelector("#wind");
@@ -117,11 +119,8 @@ function displayTemp(response) {
 function showLocation(position) {
   let lat = position.coords.latitude;
   let long = position.coords.longitude;
-  let cityName = position.name;
-  let cityElement = document.querySelector("li.city");
-  cityElement.innerHTML = `${cityName}`;
   let apiKey = "5ab70d197dba690a5ae06fdbdb453115";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&name=${cityName}&units=imperial&appid=${apiKey}`;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&units=imperial&appid=${apiKey}`;
   axios.get(apiUrl).then(displayTemp);
 }
 
